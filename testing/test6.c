@@ -11,7 +11,10 @@ int main(void) {
 	char reduced[SENTENCE_MAX_LEN];
 	FILE *fd;
 	char *path="../../ff-test_bookmarks.html";
-	fd = fopen(path, "r");
+	if ((fd = fopen(path, "r")) == NULL) {
+		perror("[ERROR] could NOT open file");
+		return -1;
+	}
 
 
 	int cnt = 0;
