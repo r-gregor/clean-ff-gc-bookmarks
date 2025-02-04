@@ -1,5 +1,4 @@
-/* src/clean-ff-gc-bookmarks.c */
-/* from: testing/test8.c */
+/* test8.c */
 #include <stdio.h>
 #include <string.h>
 
