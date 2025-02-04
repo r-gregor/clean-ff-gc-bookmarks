@@ -16,5 +16,5 @@ if [ ! -f ${fname}.c ]; then
 fi
 
 set -xe
-gcc -Wall -o ./bin/${fname} ./${fname}.c
+gcc -Wall -o ./bin/${fname} ./${fname}.c ./substrcheck.c ./substrcheck.h
 
