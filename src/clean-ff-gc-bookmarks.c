@@ -9,7 +9,7 @@
 bool is_substring(char *substr, char *string);
 
 int main(int argc, char **argv) {
-	
+
 	char *path;
 
 	if (argc == 2) {
@@ -68,8 +68,7 @@ int main(int argc, char **argv) {
 				s_pos++;
 			}
 		}
-		
-		
+
 		while(sentence[s_pos] != '\0') {
 			reduced[r_pos] = sentence[s_pos];
 			r_pos++;
@@ -77,13 +76,11 @@ int main(int argc, char **argv) {
 		}
 
 		printf("%s", reduced);
-		// printf("%s\n", sentence);
 		memset(reduced, 0, SENTENCE_MAX_LEN);
 		memset(sentence, 0, SENTENCE_MAX_LEN);
 	}
 
 	fclose(fd);
-
 	printf("\n");
 
 	return 0;
